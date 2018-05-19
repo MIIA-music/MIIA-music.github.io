@@ -13,37 +13,68 @@
 			body{
 				background-color:rgb(0,0,0);
 			}
-			h1{
-				color:rgb(255,255,255);
-				font-size:70px;
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
 			}
-			h2{
-				color:rgb(255,255,255);
+			.column {
+    				float: left;
+    				padding: 15px;
 			}
-			h3{
-				color:rgb(255,255,255);
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
 			}
-			p{
-				color:rgb(255,255,255);
-				font-size:20px;
+			.menu {
+    				width: 25%;
 			}
-			a{
-				color:rgb(255,255,255);
+			.content {
+    				width: 75%;
 			}
+			.menu ul {
+    				list-style-type: none;
+    				margin: 0;
+    				padding: 0;
+			}
+			.menu li {
+    				padding: 8px;
+    				margin-bottom: 8px;
+    				background-color: rgba(225,145,0,1);
+    				color: #ffffff;
+			}
+			.menu li:hover {
+    				background-color: #0099cc;
+			}
+
 		</style>
 		<title>MIIA-Music</title>
 	</head>
 	<body>
-		<div class = "container">
-			<div>
-				<h1>MIIA Music</h1>
-				<p>在這裡，找到自己所愛的音樂</p>
-			</div>
+		<div class="header">
+  			<h1>MIIA MUSIC WEBSIDE</h1>
 		</div>
-		<div class = "container">
-			<div>
-				
-			</div>
+
+		<div class="clearfix">
+  			<div class="column menu">
+    				<ul>
+      					<li>華語歌曲</li>
+      					<li>歐美歌曲</li>
+      					<li>K-pop</li>
+      					<li>J-pop</li>
+    				</ul>
+  			</div>
+
+  			<div class="column content">
+    				<h1></h1>
+    				<p></p>
+  			</div>
 		</div>
+
+		<div class="footer">
+  			<p>Footer Text</p>
+		</div>
+
 	</body>
 </html>
