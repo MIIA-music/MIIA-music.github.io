@@ -37,8 +37,10 @@
 				padding: 8px;
 				margin:6px;
 				color:white;
-				
-				
+			}
+			.video-container{
+				padding: 8px;
+				margin: 6px;
 			}
 			.menu ul {
     				list-style-type: none;
@@ -48,12 +50,13 @@
 			.menu li {
     				padding: 8px;
     				margin-bottom: 6px;
-    				background-color: rgba(254,160,0,1);
+    				background-color: grey;
     				color: #ffffff;
 				
 			}
 			.menu li:hover {
-    				background-color: rgba(255,200,0,1);
+    				background-color: rgba(254,160,0,1);
+				color: black;
 			}
 
 		</style>
@@ -67,7 +70,7 @@
 		<div class="clearfix">
   			<div class="column menu">
     				<ul>
-      					<li id ="btn1">首頁</li>
+      					<li id ="btn1" style="background-color:red; color:white;">首頁</li>
 					<li id ="btn2">華語歌曲</li>
       					<li id ="btn3">歐美歌曲</li>
       					<li id ="btn4">K-pop</li>
@@ -78,7 +81,9 @@
   			<div class="column content">
 					<h4 class ="small-title">推薦影片</h4>
 				</br>		
-    			
+    				<div class ="video-container">
+					
+				</div>
   			</div>
 		</div>
 
