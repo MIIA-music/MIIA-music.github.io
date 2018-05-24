@@ -30,3 +30,5 @@
 	./j_pop/song-index-jp(含2、3)亂碼，請求修正。
 05242344 by Joe
 	樓上沒事了，上船編碼格式記得用UTF-8，不然會變亂碼。
+052423557 by Joe
+	目前進度：除j-pop外三個之song-list未開啟，song-list皆空白，song-list連接單曲皆未做，單曲數量0。
