@@ -108,7 +108,7 @@
         </br>		
       <div>
         <!-直接把介紹放到底下的 p 即可，系統會自動排版-->
-        <p class="introduce">這首歌被收錄在 IU 於2017年三月發行的第四張 "Palette" 專輯之中，為IU親自創作的抒情歌曲，其歌詞描述的是夜晚思念某個人的心情。整首歌以簡單的民謠配樂，搭配IU溫暖的嗓音，讓人一聽，就能馬上進入情境當中，伴隨著想念和回憶，走入夢境。</p>
+        <p class="introduce">這首歌被收錄在 IU 於2017年四月發行的第四張專輯 "Palette" 之中，為IU親自作詞的抒情歌曲，其歌詞描述的是夜晚思念某個人的心情。整首歌以簡單的民謠配樂，搭配IU溫暖的嗓音，讓人一聽，就能馬上進入情境當中，伴隨著想念和回憶，走入夢境。</p>
       </div>
     </div>
   </div>
@@ -116,7 +116,7 @@
   </div>
 
 <div class="clearfix">
-  <div class="row" style="height:45%; padding-left:10px">
+  <div class="row" style="height:45%; padding-left:20px">
     <div class="colume menu">
       <h4 class="small-title" style="font-size:40px">中韓歌詞</h4></br>
     <p class="introduce lyrics">	<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
