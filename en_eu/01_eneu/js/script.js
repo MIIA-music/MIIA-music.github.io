@@ -9,8 +9,8 @@
 title: 'Sugar',
 artist: 'Maroon 5',
 album: 'V',
-cover: 'https://miia-music.github.io/MusicCoverPics/Maroon5_V.jpg',
-mp3: 'https://miia-music.github.io/MusicFiles/12 Sugar.m4a',
+cover: 'img/Maroon5_V.jpg',
+mp3: 'mp3/12 Sugar.m4a',
 ogg: ''
 },
 
