@@ -3,6 +3,13 @@
   padding: 0;
 }
 
+body {
+  font: 14px "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+ /* background: #333;*/
+  background: url(../../img/bg6.jpg)  50%  50% / cover no-repeat fixed;
+  color: #fff;
+}
+
 a {
   outline: none;
   text-decoration: none;
@@ -90,7 +97,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
-  opacity: 1;
+  opacity: 0.6;
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -108,7 +115,7 @@ a {
   opacity: 1;
 }
 #player .ctrl .icon:active {
-  opacity: 1;
+  opacity: 0.3;
 }
 #player .ctrl .control {
   margin-top: 10px;
@@ -191,7 +198,7 @@ a {
   background: #fff;
   margin-left: -2.5px;
   position: absolute;
-  opacity: 1;
+  opacity: 0;
   width: 5px;
   height: 5px;
   -moz-border-radius: 50%;
@@ -227,8 +234,6 @@ a {
   /*background: #FF2500;*/
   background: #fff;
 }
-
-
 
 footer {
   position: relative;
