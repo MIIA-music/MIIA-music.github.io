@@ -39,3 +39,6 @@
 05261645 by JCN
 	模板大致建構完成，請求音樂播放器技術協助(唯一短缺之元素)；此外，盡快建立其他歌曲介紹頁面，以利後續的推薦樂曲連結建立。
 	(資料位置：MIIA-music.github.io/en_eu/01_eneu.html)
+05271319 by Joe
+	j_pop,song-index-jp  <a href="./j_pop/01_JP Aimer1.html"><li>Aimer - 蝴蝶結</li></a> request to repair!!
+
