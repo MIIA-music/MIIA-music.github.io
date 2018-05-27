@@ -1,4 +1,4 @@
- {
+﻿ {
   margin: 0;
   padding: 0;
 }
@@ -90,7 +90,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
-  opacity: 0.6;
+  opacity: 1;
   cursor: pointer;
   width: 24px;
   height: 24px;
@@ -108,7 +108,7 @@ a {
   opacity: 1;
 }
 #player .ctrl .icon:active {
-  opacity: 0.3;
+  opacity: 1;
 }
 #player .ctrl .control {
   margin-top: 10px;
@@ -191,7 +191,7 @@ a {
   background: #fff;
   margin-left: -2.5px;
   position: absolute;
-  opacity: 0;
+  opacity: 1;
   width: 5px;
   height: 5px;
   -moz-border-radius: 50%;
