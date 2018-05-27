@@ -6,19 +6,11 @@
 		autoplay = true,
 		playlist = [
 {
-title: '咕噠子想要變可愛',
+title: 'Sugar',
 artist: '未知',
 album: '未知',
-cover: 'img/1.jpg',
-mp3: 'mp3/咕噠子想要變可愛.mp3',
-ogg: ''
-},
-{
-title: '打上花火',
-artist: 'DAOKO × 米津玄師',
-album: '未知',
-cover: 'img/2.jpg',
-mp3: 'mp3/DAOKO × 米津玄師『打上花火』MUSIC VIDEO.mp3',
+cover: '',
+mp3: 'MusicFiles/12 Sugar',
 ogg: ''
 },
 
