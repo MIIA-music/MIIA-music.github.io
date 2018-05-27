@@ -5,8 +5,7 @@
 
 body {
   font: 14px "Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
- /* background: #333;*/
-  background: url(../../img/bg6.jpg)  50%  50% / cover no-repeat fixed;
+  background: #333;
   color: #fff;
 }
 
