@@ -89,6 +89,7 @@
 			}
 			
 		</style>
+
 		<title>Maroon 5 - Sugar--MIIA-Music</title>
 	</head>
 	<body>
@@ -101,8 +102,47 @@
 		<div class="clearfix">
 			<div class="row" style="height:25%">
   			<div class="column menu">
-    				<!-Music player SHOULD be here-->
-  			</div>
+    				
+				<!-Music player SHOULD be here-->
+  			<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress">
+			<div class="slider">
+				<div class="loaded"></div>
+		        <div class="pace"></div>
+		        </div>
+			<div class="timer left">0:00</div>
+			<div class="right">
+				<div class="repeat icon"></div>
+				<div class="shuffle icon"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="js/script.js"></script>
+				</div>
 			<div class="column content">
 				<h4 class ="small-title" style="font-size:40px">歌曲介紹</h4>
 				</br>		
