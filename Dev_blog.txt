@@ -41,4 +41,5 @@
 	(資料位置：MIIA-music.github.io/en_eu/01_eneu.html)
 05281354 by JCN
 	k_pop介紹網頁(build by May)建置(merge位置錯誤，協助建置)*2，此外，音樂播放器時間軸仍有問題，需要協助處裡JavaScript。
-
+05282239 by Joe
+	01_JP.html  music player request to repair
