@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!-如果commit中有提到"Check Dev_blog"的話，建議先看一下有甚麼更動-->
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +10,23 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+    $(document).ready(function(){
+        $("#a-part").hide();
+    
+        
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+        })    
+            }); 
+		</script>
+		
 		<style>
 			body{
 				background-color:rgb(0,0,0);
@@ -29,46 +45,39 @@
     				clear: both;
     				display: table;
 			}
-			.menu {
-    				width: 70%;
-			}
-			.content {
-    				width: 30%;
-			}
-			.small-title{
-				padding: 8px;
-				margin:6px;
-				color:white;
-			}
-			.video-container{
-				float: left;
-    				width: 25%;
-    				padding: 5px;
-    				height: auto;
-			}
-			.menu ul {
-    				list-style-type: none;
-    				margin: 0;
-    				padding: 0;
-			}
-			.menu li {
-    				padding: 8px;
-    				margin-bottom: 0px;
-    				background-color: grey;
-    				color: #ffffff;
-				
-			}
-			.menu li:hover {
-    				background-color: rgba(255,84,84,1);
-				color: black;
-			}
-			.menu a {
-				color: #ffffff;
-			}
-			.menu a:hover {
-				color: black;
-				text-decoration:none;
-			}
+			.main-board{
+						width: 70%;
+						}
+			.sec-board{
+						width: 30%;
+						}
+						
+			
+			#navul {
+					list-style-type: none;
+					margin: 0;
+					padding: 0;
+					overflow: hidden;
+					background-color: #333;
+					width:100%
+					}
+
+			.navli {
+					float: left;
+					}
+
+			.navli, .btn {
+						display: inline-block;
+						color: white;
+						text-align: center;
+						padding: 14px 16px;
+						text-decoration: none;
+						}
+
+			.navli:hover,.btn {
+						background-color: red;
+							}
+			
 			.introduce {
 				color:white;
 				padding: 8px;
@@ -79,7 +88,7 @@
 				padding:8px;
 				margin:4px;
 				width:100%;
-				height:25%;
+				height:50%;
 				border: 1px dotted black;
 				overflow: scroll;
 				overflow-x: hidden;
@@ -94,133 +103,117 @@
 				background-color:#e9ecef;
 				border-radius:.25rem
 				}
-			
 		</style>
 		<title>Aimer - 蝴蝶結--MIIA-Music</title>
 	</head>
+	
 	<body>
-		<div class="header">
-			<!-記得修改歌曲名稱與該歌曲所在之大類別-->
-  			<h1>Aimer - 蝴蝶結</h1>
+		<div class = "header">
+		<h1>Aimer - 蝴蝶結</h1>
 			<p style="font-size: 17px;">MIIA Music - J-POP</p>
 		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+						<div class = "player">
+							<div class="cover"></div>
+							<div class="ctrl">
+								<div class="tag">
+									<strong>Title</strong>
+								</div>
+								<div class="control">
+									<div class="left">
+											<div class="rewind icon"></div>
+											<div class="playback icon"></div>
+											<div class="fastforward icon"></div>
+									</div>
+									<div class="volume right">
+										<div class="mute icon left"></div>
+										<div class="slider left">
+											<div class="pace"></div>
+										</div>
+									</div>
+								</div>
+								<div class="progress" style="background-color:black">
+									<div class="slider" style="width:345px">
+										<div class="loaded"></div>
+										<div class="pace"></div>
+									</div>
+								</div>
+								<div class="timer left">0:00</div>
+							</div>
+						</div>
+						<div class = "nav">
+							<ul id = "navul">
+								<li class = "navli" id = "a-bt">introduce</li>
+								<li class = "navli" id = "b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								<h4 class="small-title" style="font-size:40px ,color:white">歌詞</h4></br>
+								<p class="introduce lyrics">	
+									片っぽで丸を作って　しっかり持ってて</br>
+									もう片っぽでその丸の後ろを　ぐるっと回って</br>
 
-			<div class="clearfix">
-			<div class="row" style="height:25%">
-  			<div class="column menu">
-    				
-				<!-Music player SHOULD be here-->
-  			<div id="player">
-	<div class="cover"></div>
-	<div class="ctrl">
-		<div class="tag">
-			<strong>Title</strong>
-		</div>
-		<div class="control">
-			<div class="left">
-				<div class="rewind icon"></div>
-				<div class="playback icon"></div>
-				<div class="fastforward icon"></div>
-			</div>
-			<div class="volume right">
-				<div class="mute icon left"></div>
-				<div class="slider left">
-					<div class="pace"></div>
+									間にできたポッケに入って　出て来るの待ってて</br>
+									出てきたところを迎えにきて　「せーの」で引っぱって</br>
+
+									はじめはなんとも　情けない形だとしても</br>
+									同じだけ力を込めて</br>
+
+									羽根は大きく　結び目は固く</br>
+									なるようにきつく　結んでいてほしいの</br>
+
+									腕はここに　想い出は遠くに</br>
+									置いておいてほしい　ほしいの</br>
+	
+									片っぽでも引っ張っちゃえば　ほどけちゃうけど</br>
+									作ったもの壊すのは　遥かに　簡単だけど</br>
+
+									だけどほどく時も　そう、ちゃんと　同じようにね</br>
+									分かってるよ　でもできたらね　「せーの」で引っ張って</br>
+
+									ほどけやしないように　と願って力込めては</br>
+									広げすぎた羽根に　戸惑う</br>
+
+									羽根は大きく　結び目は固く</br>
+									なるようにきつく　結んでいてほしいの</br>
+
+									夢はここに　想い出は遠くに</br>
+									気付けばそこにあるくらいがいい</br>
+
+									黙って引っ張ったりしないでよ　不格好な蝶にしないでよ</br>
+									結んだつもりがほどいていたり　緩めたつもりが締めていたり</br>
+
+									この蒼くて広い世界に　無数に　散らばった中から</br>
+									別々に二人選んだ糸を　お互いたぐり寄せ合ったんだ</br>
+
+									結ばれたんじゃなく結んだんだ　二人で「せーの」で引っ張ったんだ</br>
+									大きくも　小さくも　なりすぎないように　力を込めたんだ</br>
+								</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">《蝴蝶結》（蝶々結び）是Aimer的第11張單曲。2016年8月17日開始發售。初回生産限定盤內含收錄有音樂視頻和錄音棚實錄影像的DVD。此外，早期出貨版光碟還附有第十支單曲「insane dream / us」W購入者特典的明星片。野田洋次郎（RADWIMPS）本次提供並製作的歌曲《蝴蝶結》有著民謠一般的風格。野田洋次郎除了提供曲子和擔當製作人之外，還參加了錄製和聲。另外，永積崇也參與了吉他彈奏與和聲錄製。作為CP曲所收錄的《九月》，是RADWIMPS專輯《RADWIMPS 3〜無人島に持っていき忘れた一枚〜》中同名曲子的翻唱版本。</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#">song 1</a></li>
+						<li><a href = "#">song 2</a></li>
+						<li><a href = "#">song 3</a></li>
+						<li><a href = "#">song 4</a></li>
+						<li><a href = "#">song 5</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		<div class="progress" style="background-color:black">
-			<div class="slider" style="width:345px">
-				<div class="loaded"></div>
-				<div class="pace"></div>
-		        </div>
+		<div class = "footer">
+		<p>本業面僅供學術研究之用</p>
 		</div>
-		<div class="timer left">0:00</div>
-	</div>
-</div>
-
-<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
-
-
-
-<script src="./js/script.js"></script>
-				</div>
-			<div class="column content">
-				<h4 class ="small-title" style="font-size:40px">歌曲介紹</h4>
-				</br>		
-    				<div>
-					<!-直接把介紹放到底下的 p 即可，系統會自動排版-->
-  					<p class="introduce">《蝴蝶結》（蝶々結び）是Aimer的第11張單曲。2016年8月17日開始發售。初回生産限定盤內含收錄有音樂視頻和錄音棚實錄影像的DVD。此外，早期出貨版光碟還附有第十支單曲「insane dream / us」W購入者特典的明星片。野田洋次郎（RADWIMPS）本次提供並製作的歌曲《蝴蝶結》有著民謠一般的風格。野田洋次郎除了提供曲子和擔當製作人之外，還參加了錄製和聲。另外，永積崇也參與了吉他彈奏與和聲錄製。作為CP曲所收錄的《九月》，是RADWIMPS專輯《RADWIMPS 3〜無人島に持っていき忘れた一枚〜》中同名曲子的翻唱版本。</p>
-				</div>
-  			</div>
-			</div>
-		</div>
-
-		<div class="clearfix">
-			<div class="row" style="height:45%; padding-left:10px">
-				<div class="colume menu">
-					<h4 class="small-title" style="font-size:40px">歌詞</h4></br>
-						<p class="introduce lyrics">	<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
-			片っぽで丸を作って　しっかり持ってて</br>
-			もう片っぽでその丸の後ろを　ぐるっと回って</br>
-
-			間にできたポッケに入って　出て来るの待ってて</br>
-			出てきたところを迎えにきて　「せーの」で引っぱって</br>
-
-			はじめはなんとも　情けない形だとしても</br>
-			同じだけ力を込めて</br>
-
-			羽根は大きく　結び目は固く</br>
-			なるようにきつく　結んでいてほしいの</br>
-
-			腕はここに　想い出は遠くに</br>
-			置いておいてほしい　ほしいの</br>
-
-			片っぽでも引っ張っちゃえば　ほどけちゃうけど</br>
-			作ったもの壊すのは　遥かに　簡単だけど</br>
-
-			だけどほどく時も　そう、ちゃんと　同じようにね</br>
-			分かってるよ　でもできたらね　「せーの」で引っ張って</br>
-
-			ほどけやしないように　と願って力込めては</br>
-			広げすぎた羽根に　戸惑う</br>
-
-			羽根は大きく　結び目は固く</br>
-			なるようにきつく　結んでいてほしいの</br>
-
-			夢はここに　想い出は遠くに</br>
-			気付けばそこにあるくらいがいい</br>
-
-			黙って引っ張ったりしないでよ　不格好な蝶にしないでよ</br>
-			結んだつもりがほどいていたり　緩めたつもりが締めていたり</br>
-
-			この蒼くて広い世界に　無数に　散らばった中から</br>
-			別々に二人選んだ糸を　お互いたぐり寄せ合ったんだ</br>
-
-			結ばれたんじゃなく結んだんだ　二人で「せーの」で引っ張ったんだ</br>
-			大きくも　小さくも　なりすぎないように　力を込めたんだ</br>
-			</p>
-			
-			
-			
-			
-				</div>
-				<div class="colume content">
-				<!-Placing links to other songs，在此處放置站內其他介紹歌曲連結-->
-				</div>
-			</div>
-		</div>
-		</br>
-		<div class="footer" style="position:fixed; width:100%; height:10%">
-  			<p></p>
-		</div>
-			
+	
 	</body>
-
-
-
-
-
-
-
-
+</html>
