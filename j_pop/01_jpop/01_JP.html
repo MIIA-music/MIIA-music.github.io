@@ -6,6 +6,8 @@
 		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
@@ -80,7 +82,16 @@
 				height:25%;
 				border: 1px dotted black;
 				overflow: scroll;
+				overflow-x: hidden;
+				text-align: center;
 			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+				}
 			
 		</style>
 		<title>Aimer - 蝴蝶結--MIIA-Music</title>
@@ -92,11 +103,46 @@
 			<p style="font-size: 17px;">MIIA Music - J-POP</p>
 		</div>
 
-		<div class="clearfix">
+			<div class="clearfix">
 			<div class="row" style="height:25%">
   			<div class="column menu">
-    				<!-Music player SHOULD be here-->
-  			</div>
+    				
+				<!-Music player SHOULD be here-->
+  			<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+				</div>
 			<div class="column content">
 				<h4 class ="small-title" style="font-size:40px">歌曲介紹</h4>
 				</br>		
