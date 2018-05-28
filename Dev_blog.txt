@@ -39,5 +39,6 @@
 05261645 by JCN
 	模板大致建構完成，請求音樂播放器技術協助(唯一短缺之元素)；此外，盡快建立其他歌曲介紹頁面，以利後續的推薦樂曲連結建立。
 	(資料位置：MIIA-music.github.io/en_eu/01_eneu.html)
-
+05281354 by JCN
+	k_pop介紹網頁(build by May)建置(merge位置錯誤，協助建置)*2，此外，音樂播放器時間軸仍有問題，需要協助處裡JavaScript。
 
