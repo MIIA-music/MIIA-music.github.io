@@ -11,17 +11,21 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		
 		<script>
+
     $(document).ready(function(){
         $("#a-part").hide();
-    
-        
+		$("a-bt").css("background-color","red");
         $("#a-bt").click(function(){
                 $("#a-part").hide();
                 $("#b-part").fadeIn();
+				$("#a-bt").css("background-color","red")
+				$("#b-bt").css("background-color","#333")
         })
         $("#b-bt").click(function(){
                 $("#b-part").hide();
                 $("#a-part").fadeIn();
+				$("#b-bt").css("background-color","red");
+				$("#a-bt").css("background-color","#333");
         })    
             }); 
 		</script>
@@ -162,9 +166,9 @@
 </div>
 
 						<div class = "nav">
-							<ul id = "navul" style="padding-left:15px">
-								<li class = "navli" id = "a-bt">introduce</li>
-								<li class = "navli" id = "b-bt">lyrics</li>
+							<ul id="navul" style="padding-left:15px">
+								<li class="navli" id="a-bt" style="background-color: rgb(51, 51, 51);">introduce</li>
+								<li class="navli" id="b-bt" style="background-color: red;">lyrics</li>
 							</ul>
 						</div>
 						
