@@ -13,15 +13,19 @@
 		<script>
     $(document).ready(function(){
         $("#a-part").hide();
-    
+		$("a-bt").css("background-color","red");
         
         $("#a-bt").click(function(){
                 $("#a-part").hide();
                 $("#b-part").fadeIn();
+				$("#a-bt").css("background-color","red")
+				$("#b-bt").css("background-color","#333")
         })
         $("#b-bt").click(function(){
                 $("#b-part").hide();
                 $("#a-part").fadeIn();
+				$("#b-bt").css("background-color","red");
+				$("#a-bt").css("background-color","#333");
         })    
             }); 
 		</script>
