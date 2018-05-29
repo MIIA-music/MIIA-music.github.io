@@ -8,7 +8,7 @@
 {
 title: 'Santa Tell Me',
 artist: 'Ariana Grande',
-album: '',
+album: 'Single - Santa Tell Me',
 cover: 'img/SentaTellMe.jpg',
 mp3: 'mp3/Santa Tell Me.m4a',
 ogg: ''
