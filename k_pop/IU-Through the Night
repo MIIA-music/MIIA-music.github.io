@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-如果commit中有提到"Check Dev_blog"的話，建議先看一下有甚麼更動-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-color:rgb(0,0,0);
+    }
+    .header, .footer {
+      width:100%;
+      background-color: grey;
+      color: white;
+      padding: 15px;
+    }
+    .column {
+      float: left;
+      padding: 15px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .menu {
+      width: 70%;
+    }
+    .content {
+      width: 30%;
+    }
+    .small-title{
+      padding: 8px;
+      margin:6px;
+      color:white;
+    }
+    .video-container{
+      float: left;
+      width: 25%;
+      padding: 5px;
+      height: auto;
+    }
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      padding: 8px;
+      margin-bottom: 0px;
+      background-color: grey;
+      color: #ffffff;
+
+    }
+    .menu li:hover {
+      background-color: rgba(254,160,0,1);
+      color: black;
+    }
+    .menu a {
+      color: #ffffff;
+    }
+    .menu a:hover {
+      color: black;
+      text-decoration:none;
+    }
+    .introduce {
+      color:white;
+      padding: 8px;
+      margin: 4px;
+      background-color: black;
+      width: 80%;
+      height: 100%;
+      border: 1px dotted black;
+      overflow: auto;
+    }
+    .lyrics {
+      color:white;
+      padding:8px;
+      margin:4px;
+      width:100%;
+      height:25%;
+      border: 1px dotted black;
+      overflow: scroll;
+    }
+
+  </style>
+  <title>IU - Through the Night (밤편지)--MIIA-Music</title>
+</head>
+<body>
+  <div class="header">
+    <!-記得修改歌曲名稱與該歌曲所在之大類別-->
+    <h1>IU - Through the Night (밤편지)</h1>
+    <p style="font-size: 17px;">MIIA Music - K-pop</p>
+  </div>
+
+  <div class="clearfix">
+    <div class="row" style="height:25%">
+      <div class="column menu">
+        <!-Music player SHOULD be here-->
+      </div>
+      <div class="column content">
+        <h4 class ="small-title" style="font-size:40px">歌曲介紹</h4>
+        </br>		
+      <div>
+        <!-直接把介紹放到底下的 p 即可，系統會自動排版-->
+        <p class="introduce">這首歌被收錄在 IU 於2017年四月發行的第四張專輯 "Palette" 之中，為IU親自作詞的抒情歌曲，其歌詞描述的是夜晚思念某個人的心情。整首歌以簡單的民謠配樂，搭配IU溫暖的嗓音，讓人一聽，就能馬上進入情境當中，伴隨著想念和回憶，走入夢境。</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+<div class="clearfix">
+  <div class="row" style="height:45%; padding-left:20px">
+    <div class="colume menu">
+      <h4 class="small-title" style="font-size:40px">中韓歌詞</h4></br>
+    <p class="introduce lyrics">	<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+      이 밤 그날의 반딧불을</br> 這個晚上 把那天的螢火</br>
+
+당신의 창 가까이 보낼게요</br> 送到靠近你的窗戶邊</br>
+
+음 사랑한다는 말이에요</br> 嗯 那是愛你的話</br>
+
+나 우리의 첫 입맞춤을 떠올려</br> 我回想起我們的初吻</br>
+
+그럼 언제든 눈을 감고</br> 不管什麼時候都會閉起眼睛</br>
+
+음 가장 먼 곳으로 가요</br> 嗯 去到最遙遠的地方</br>
+
+난 파도가 머물던</br> 我就像海浪曾經留下的</br>
+
+모래 위에 적힌 글씨처럼</br> 沙灘上寫下的文字一樣</br>
+
+그대가 멀리 사라져 버릴 것 같아</br> 你好像遠遠的消失一樣</br>
+
+늘 그리워 그리워</br> 總是想念你 想你</br>
+
+여기 내 마음속에</br> 這裡 我的心裡</br>
+
+모든 말을 다 꺼내어 줄 순 없지만</br> 所有的話 雖然都無法說出</br>
+
+사랑한다는 말이에요</br> 愛你的那句話</br>
+
+어떻게 나에게</br> 怎麼會到我這裡</br>
+
+그대란 행운이 온 걸까</br> 像你這樣的幸福</br>
+
+지금 우리 함께 있다면 아</br> 現在我們在一起的話 啊</br>
+
+얼마나 좋을까요</br> 那該有多好</br>
+
+난 파도가 머물던</br> 我就像海浪曾經留下的</br>
+
+모래 위에 적힌 글씨처럼</br> 沙灘上寫下的文字一樣</br>
+
+그대가 멀리 사라져 버릴 것 같아</br> 你好像遠遠的消失一樣</br>
+
+또 그리워 더 그리워</br> 更想念你 更加想你</br>
+
+나의 일기장 안에</br> 我的日記本裡</br>
+
+모든 말을 다 꺼내어 줄 순 없지만</br> 所有的話 雖然都無法說出</br>
+
+사랑한다는 말</br> 愛你的那句話</br>
+
+이 밤 그날의 반딧불을</br> 這個晚上 把那天的螢火</br>
+
+당신의 창 가까이 띄울게요</br> 送到靠近你的窗戶邊</br>
+
+음 좋은 꿈 이길 바라요</br> 嗯 祝你有個好夢</br>
+
+</p>
+
+
+</div>
+<div class="colume content">
+  <h4 class="small-title" style="font-size:40px">你可能也會喜歡</h4>
+  <!-Placing links to other songs，在此處放置站內其他介紹歌曲連結-->
+
+  <div class="row, clear-fix">
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MRknestx2ec" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/4uTNVumfm84" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/VEYVQmgWsIg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/YmX_y3gQPsM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row, clear-fix">
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BzYnNdJhZQw?list=PLJSYV4jabimtRUR76Xxo5TWw-sCSzaVVm" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Rh5ok0ljrzA?list=PLJSYV4jabimtRUR76Xxo5TWw-sCSzaVVm" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/9S0187VFMck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/L2rUVWSI4Vc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  					</div>
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+</br>
+<div class="footer" style="position:fixed; width:100%; height:10%">
+  <p></p>
+</div>
+
+</body>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-如果commit中有提到"Check Dev_blog"的話，建議先看一下有甚麼更動-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-color:rgb(0,0,0);
+    }
+    .header, .footer {
+      width:100%;
+      background-color: grey;
+      color: white;
+      padding: 15px;
+    }
+    .column {
+      float: left;
+      padding: 15px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .menu {
+      width: 70%;
+    }
+    .content {
+      width: 30%;
+    }
+    .small-title{
+      padding: 8px;
+      margin:6px;
+      color:white;
+    }
+    .video-container{
+      float: left;
+      width: 25%;
+      padding: 5px;
+      height: auto;
+    }
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      padding: 8px;
+      margin-bottom: 0px;
+      background-color: grey;
+      color: #ffffff;
+
+    }
+    .menu li:hover {
+      background-color: rgba(254,160,0,1);
+      color: black;
+    }
+    .menu a {
+      color: #ffffff;
+    }
+    .menu a:hover {
+      color: black;
+      text-decoration:none;
+    }
+    .introduce {
+      color:white;
+      padding: 8px;
+      margin: 4px;
+      background-color: black;
+      width: 80%;
+      height: 100%;
+      border: 1px dotted black;
+      overflow: auto;
+    }
+    .lyrics {
+      color:white;
+      padding:8px;
+      margin:4px;
+      width:100%;
+      height:25%;
+      border: 1px dotted black;
+      overflow: scroll;
+    }
+
+  </style>
+  <title>IU - 這樣的Ending (Ending Scene)--MIIA-Music</title>
+</head>
+<body>
+  <div class="header">
+    <!-記得修改歌曲名稱與該歌曲所在之大類別-->
+    <h1>IU - 這樣的Ending (Ending Scene)</h1>
+    <p style="font-size: 17px;">MIIA Music - K-pop</p>
+  </div>
+
+  <div class="clearfix">
+    <div class="row" style="height:25%">
+      <div class="column menu">
+        <!-Music player SHOULD be here-->
+      </div>
+      <div class="column content">
+        <h4 class ="small-title" style="font-size:40px">歌曲介紹</h4>
+        </br>		
+      <div>
+        <!-直接把介紹放到底下的 p 即可，系統會自動排版-->
+        <p class="introduce">這首歌被收錄在 IU 於2017年四月發行的第四張專輯 "Palette" 之中，由IU親自作詞。歌曲描述的是一個人面對自己已逝去的愛情時，那份無力挽回的痛，以及最後的祝福，將無法再對那人訴說的甜言蜜語，化作歌詞，如同自言自語般。整首歌以簡單的背景音樂伴奏，加上IU扣人心弦的嗓音，情感很快就能產生共鳴，讓人不禁就喚起深埋已久的回憶。</p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+<div class="clearfix">
+  <div class="row" style="height:45%; padding-left:20px">
+    <div class="colume menu">
+      <h4 class="small-title" style="font-size:40px">中韓歌詞</h4></br>
+    <p class="introduce lyrics">	<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+      안녕 오랜만이야</br>
+  你好 好久不見了</br>
+물음표 없이 참 너다운 목소리</br>
+沒有半點疑問 你那般低沉的聲音</br>
+정해진 규칙처럼</br>
+像是早已定好的規則似的</br>
+추운 문가에 늘 똑같은 네 자리</br>
+在冷冽的門外 你那從頭到尾都沒變的位置</br>
+</br>
+제대로 잘 먹어 다 지나가니까</br>
+絕對要好好吃飯 因為全都會好轉的</br>
+예전처럼 잠도 잘 자게 될 거야 </br>
+會跟以前一樣好好睡覺的</br>
+진심으로 빌게</br>
+我會真心祈求的</br>
+너는 더 행복할 자격이 있어</br>
+比起我你會更有資格得到幸福的</br>
+</br>
+그런 말은 하지 마 제발</br>
+不要說這種話 拜託</br>
+그 말이 더 아픈 거 알잖아</br>
+這種話會使我更心痛 你不是知道嗎</br>
+사랑해줄 거라며 다 뭐야</br>
+把愛情分一些給我又如何</br>
+어떤 맘을 준 건지 너는 모를 거야</br>
+不論我給予你怎樣的心意 你都不會知曉</br>
+</br>
+외로웠던 만큼</br>
+寂寞久了</br>
+너를 너보다 사랑해줄 사람</br>
+那位比你自己付出得更多愛情的人</br>
+꼭 만났으면 해</br>
+期望你一定會遇見</br>
+내가 아니라서 미안해</br>
+那個人不是我 對不起</br>
+주는 게 쉽지가 않아</br>
+給出愛情對我來說仍舊有點困難</br>
+그런 말은 하지 마 제발</br>
+不要說這種話 拜託</br>
+그 말이 더 아픈 거 알잖아</br>
+這種話會使我更心痛 你不是知道嗎</br>
+사랑해줄 거라며 다 뭐야</br>
+어떤 맘을 준 건지 끝내 모를</br>
+不論我給予你怎樣的心意 到最後你都不知道</br>
+</br>
+솔직히 말해줄래 제발</br>
+可以對我說實話嗎 拜託</br>
+너라면 다 믿는 거 알잖아</br>
+只要是你說的我都相信 你不是知道嗎</br>
+네 말대로 언젠가 나도</br>
+就如同你說 有一天我也</br>
+나 같은 누군가에게</br>
+會在與自己相像之人的身邊</br>
+사랑받게 될까?</br>
+接受愛情嗎?</br>
+
+</p>
+
+
+</div>
+<div class="colume content">
+  <h4 class="small-title" style="font-size:40px">你可能也會喜歡</h4>
+  <!-Placing links to other songs，在此處放置站內其他介紹歌曲連結-->
+
+  <div class="row, clear-fix">
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/MRknestx2ec" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/4uTNVumfm84" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/VEYVQmgWsIg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/YmX_y3gQPsM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row, clear-fix">
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/BzYnNdJhZQw?list=PLJSYV4jabimtRUR76Xxo5TWw-sCSzaVVm" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/Rh5ok0ljrzA?list=PLJSYV4jabimtRUR76Xxo5TWw-sCSzaVVm" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/9S0187VFMck" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+      <iframe width="100%" height="auto" src="https://www.youtube.com/embed/L2rUVWSI4Vc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>  					</div>
+  </div>
+
+</div>
+
+
+
+</div>
+</div>
+</br>
+<div class="footer" style="position:fixed; width:100%; height:10%">
+  <p></p>
+</div>
+
+</body>
