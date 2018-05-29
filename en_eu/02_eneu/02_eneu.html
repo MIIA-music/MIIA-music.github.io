@@ -1,0 +1,289 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+    $(document).ready(function(){
+        $("#a-part").hide();
+    
+        
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+        })    
+            }); 
+		</script>
+		
+		<style>
+			body{
+				background-color:rgb(0,0,0);
+			}
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
+			}
+			.column {
+    				float: left;
+    				padding: 15px;
+			}
+			.content{
+				width:100%;
+				}
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
+			.main-board{
+				width: 70%;
+			}
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
+			}
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
+			}
+			.navli {
+				float: left;
+			}
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navli:hover,.btn {
+				background-color: red;
+			}
+			.introduce {
+				color:white;
+				padding: 8px;
+				margin: 4px;
+			}
+			.lyrics {
+				color:white;
+				padding:8px;
+				margin:0 auto;
+				width:100%;
+				height:50%;
+				border: 1px dotted black;
+				overflow: scroll;
+				overflow-x: hidden;
+				text-align:center;
+				line-height: 27px;
+			
+			}
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+			}
+		</style>
+		<title>Maroon 5 - Sugar--MIIA-Music</title>
+	</head>
+	
+	<body>
+		<div class = "header">
+		<h1>Maroon 5 - Sugar</h1>
+			<p style="font-size: 17px;">MIIA Music - 歐美歌曲</p>
+		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+</div>
+
+						<div class = "nav">
+							<ul id = "navul" style="padding-left:15px">
+								<li class = "navli" id = "a-bt">introduce</li>
+								<li class = "navli" id = "b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->I'm hurting, baby, I'm broken down</br>
+I need your loving, loving, I need it now</br>
+When I'm without you</br>
+I'm something weak</br>
+You got me begging</br>
+Begging, I'm on my knees</br>
+I don't wanna be needing your love</br>
+I just wanna be deep in your love</br>
+And it's killing me when you're away</br>
+Ooh, baby, </br>
+'Cause I really don't care where you are</br>
+I just wanna be there where you are</br>
+And I gotta get one little taste</br>
+
+Your sugar</br>
+Yes, please</br>
+Won't you come and put it down on me</br>
+I'm right here, 'cause I need</br>
+Little love and little sympathy</br>
+Yeah you show me good loving</br>
+Make it alright</br>
+Need a little sweetness in my life</br>
+Your sugar</br>
+Yes, please</br>
+Won't you come and put it down on me</br>
+
+My broken pieces</br>
+You pick them up</br>
+Don't leave me hanging, hanging</br>
+Come give me some</br>
+When I'm without ya</br>
+I'm so insecure</br>
+You are the one thing</br>
+The one thing, I'm living for</br>
+I don't wanna be needing your love</br>
+I just wanna be deep in your love</br>
+And it's killing me when you're away</br>
+Ooh, baby, </br>
+'Cause I really don't care where you are</br>
+I just wanna be there where you are</br>
+And I gotta get one little taste</br>
+
+Your sugar</br>
+Yes, please</br>
+Won't you come and put it down on me</br>
+I'm right here, 'cause I need</br>
+Little love and little sympathy</br>
+Yeah you show me good loving</br>
+Make it alright</br>
+Need a little sweetness in my life</br>
+Your sugar (your sugar) </br>
+Yes, please (yes, please) </br>
+Won't you come and put it down on me</br>
+Yeah</br>
+
+I want that red velvet</br>
+I want that sugar sweet</br>
+Don't let nobody touch it</br>
+Unless that somebody's me</br>
+I gotta be a man</br>
+There ain't no other way</br>
+'Cause girl you're hotter than southern California Bay</br>
+I don't wanna play no games</br>
+I don't gotta be afraid</br>
+Don't give all that shy shit</br>
+No make up on, that's my</br>
+Sugar</br>
+Yes, please</br>
+Won't you come and put it down on me (down on me) </br>
+Oh, right here (right here), </br>
+'Cause I need (I need) </br>
+Little love and little sympathy</br>
+Yeah you show me good loving</br>
+Make it alright</br>
+Need a little sweetness in my life</br>
+Your sugar (sugar) </br>
+Yes, please (yes, please) </br>
+Won't you come and put it down on me</br>
+Your sugar</br>
+Yes, please</br>
+Won't you come and put it down on me</br>
+I'm right here, 'cause I need</br>
+Little love and little sympathy</br>
+Yeah you show me good loving</br>
+Make it alright</br>
+Need a little sweetness in my life</br>
+Your sugar</br>
+Yes, please</br>
+Won't you come and put it down on me</br>
+(Down on me, down on me) </br>
+								</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">這首歌被收錄在 Maroon 5 於2014年八月發行的"V" （中文：第五輯）之中，全歌曲以較快的節拍演奏，其中非常有趣的事情是該歌曲的 MV 是以2014年12月6號於洛杉磯舉辦多數婚禮作為一個題材，進入該婚禮現場搭起臨時舞台進行閃電演出，效果意外的好，也為這張專輯做了最好的宣傳。</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#" style="color: white;font-size: 15px">The Weeknd - Call Out My Name </a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Charlie Puth - "How Long"</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande, The Weeknd - Love Me Harder</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - The Way ft. Mac Miller</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - Santa Tell Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
+		</div>
+	
+	</body>
+</html>
