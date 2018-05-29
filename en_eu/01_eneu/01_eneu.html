@@ -1,5 +1,4 @@
-﻿<!DOCTYPE html>
-<!-如果commit中有提到"Check Dev_blog"的話，建議先看一下有甚麼更動-->
+﻿<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +9,28 @@
 		<script src="./js/jquery-1.7.2.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+    $(document).ready(function(){
+        $("#a-part").hide();
+    
+        
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+        })    
+            }); 
+		</script>
+		
 		<style>
 			body{
 				background-color:rgb(0,0,0);
 			}
 			.header, .footer {
-				width:100%;
     				background-color: grey;
     				color: white;
     				padding: 15px;
@@ -24,96 +39,93 @@
     				float: left;
     				padding: 15px;
 			}
+			.content{
+				width:100%;
+				}
 			.clearfix::after {
     				content: "";
     				clear: both;
     				display: table;
 			}
-			.menu {
-    				width: 70%;
+			.main-board{
+				width: 70%;
 			}
-			.content {
-    				width: 30%;
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
 			}
-			.small-title{
-				padding: 8px;
-				margin:6px;
-				color:white;
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
 			}
-			.video-container{
-
+			.navli {
 				float: left;
-    				width: 25%;
-    				padding: 5px;
-    				height: auto;
 			}
-			.menu ul {
-    				list-style-type: none;
-    				margin: 0;
-    				padding: 0;
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
 			}
-			.menu li {
-    				padding: 8px;
-    				margin-bottom: 0px;
-    				background-color: grey;
-    				color: #ffffff;
-				
-			}
-			.menu li:hover {
-    				background-color: rgba(254,160,0,1);
-				color: black;
-			}
-			.menu a {
-				color: #ffffff;
-			}
-			.menu a:hover {
-				color: black;
-				text-decoration:none;
+			.navli:hover,.btn {
+				background-color: red;
 			}
 			.introduce {
 				color:white;
 				padding: 8px;
 				margin: 4px;
-				background-color: black;
-    				width: 80%;
-   				height: 100%;
-    				border: 1px dotted black;
-    				overflow: auto;
 			}
 			.lyrics {
 				color:white;
 				padding:8px;
-				margin:4px;
+				margin:0 auto;
 				width:100%;
-				height:25%;
+				height:50%;
 				border: 1px dotted black;
 				overflow: scroll;
 				overflow-x: hidden;
 				text-align:center;
+				line-height: 27px;
+			
 			}
-			.progress{display:-ms-flexbox;
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
 				overflow:hidden;
 				font-size:.75rem;
 				background-color:#e9ecef;
-				border-radius:.25rem}
-			
+				border-radius:.25rem
+			}
 		</style>
-
 		<title>Maroon 5 - Sugar--MIIA-Music</title>
 	</head>
+	
 	<body>
-		<div class="header">
-			<!-記得修改歌曲名稱與該歌曲所在之大類別-->
-  			<h1>Maroon 5 - Sugar</h1>
+		<div class = "header">
+		<h1>Maroon 5 - Sugar</h1>
 			<p style="font-size: 17px;">MIIA Music - 歐美歌曲</p>
 		</div>
-
-		<div class="clearfix">
-			<div class="row" style="height:25%">
-  			<div class="column menu">
-    				
-				<!-Music player SHOULD be here-->
-  			<div id="player">
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
 	<div class="cover"></div>
 	<div class="ctrl">
 		<div class="tag">
@@ -147,24 +159,19 @@
 
 
 <script src="./js/script.js"></script>
-				</div>
-			<div class="column content">
-				<h4 class ="small-title" style="font-size:40px">歌曲介紹</h4>
-				</br>		
-    				<div>
-					<!-直接把介紹放到底下的 p 即可，系統會自動排版-->
-  					<p class="introduce">這首歌被收錄在 Maroon 5 於2014年八月發行的"V" （中文：第五輯）之中，全歌曲以較快的節拍演奏，其中非常有趣的事情是該歌曲的 MV 是以2014年12月6號於洛杉磯舉辦多數婚禮作為一個題材，進入該婚禮現場搭起臨時舞台進行閃電演出，效果意外的好，也為這張專輯做了最好的宣傳</p>
-				</div>
-  			</div>
-			</div>
+</div>
 
-		</div>
-
-		<div class="clearfix">
-			<div class="row" style="height:45%; padding-left:10px">
-				<div class="colume menu">
-					<h4 class="small-title" style="font-size:40px; text-align:center;">Lyrics</h4></br>
-					<p class="introduce lyrics">	<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->I'm hurting, baby, I'm broken down</br>
+						<div class = "nav">
+							<ul id = "navul" style="padding-left:15px">
+								<li class = "navli" id = "a-bt">introduce</li>
+								<li class = "navli" id = "b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->I'm hurting, baby, I'm broken down</br>
 I need your loving, loving, I need it now</br>
 When I'm without you</br>
 I'm something weak</br>
@@ -177,6 +184,7 @@ Ooh, baby, </br>
 'Cause I really don't care where you are</br>
 I just wanna be there where you are</br>
 And I gotta get one little taste</br>
+
 Your sugar</br>
 Yes, please</br>
 Won't you come and put it down on me</br>
@@ -188,6 +196,7 @@ Need a little sweetness in my life</br>
 Your sugar</br>
 Yes, please</br>
 Won't you come and put it down on me</br>
+
 My broken pieces</br>
 You pick them up</br>
 Don't leave me hanging, hanging</br>
@@ -203,6 +212,7 @@ Ooh, baby, </br>
 'Cause I really don't care where you are</br>
 I just wanna be there where you are</br>
 And I gotta get one little taste</br>
+
 Your sugar</br>
 Yes, please</br>
 Won't you come and put it down on me</br>
@@ -215,6 +225,7 @@ Your sugar (your sugar) </br>
 Yes, please (yes, please) </br>
 Won't you come and put it down on me</br>
 Yeah</br>
+
 I want that red velvet</br>
 I want that sugar sweet</br>
 Don't let nobody touch it</br>
@@ -250,31 +261,29 @@ Your sugar</br>
 Yes, please</br>
 Won't you come and put it down on me</br>
 (Down on me, down on me) </br>
-	</p>
-				
-			
-			
-			
+								</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">這首歌被收錄在 Maroon 5 於2014年八月發行的"V" （中文：第五輯）之中，全歌曲以較快的節拍演奏，其中非常有趣的事情是該歌曲的 MV 是以2014年12月6號於洛杉磯舉辦多數婚禮作為一個題材，進入該婚禮現場搭起臨時舞台進行閃電演出，效果意外的好，也為這張專輯做了最好的宣傳。</p>
+						</div>
 				</div>
-				<div class="colume content">
-					<h4 class="small-title" style="font-size:40px">你可能也會喜歡</h4>
-					<!-Placing links to other songs，在此處放置站內其他介紹歌曲連結-->
-			
-			
-			
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#">song 1</a></li>
+						<li><a href = "#">song 2</a></li>
+						<li><a href = "#">song 3</a></li>
+						<li><a href = "#">song 4</a></li>
+						<li><a href = "#">song 5</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-		</br>
-		<div class="footer" style="position:fixed; width:100%; height:10%">
-  			<p></p>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
 		</div>
-			
+	
 	</body>
 </html>
-
-
-
-
-
-
