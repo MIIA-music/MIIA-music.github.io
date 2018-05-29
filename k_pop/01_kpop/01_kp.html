@@ -11,17 +11,21 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 		
 		<script>
+
     $(document).ready(function(){
         $("#a-part").hide();
-    
-        
+		$("a-bt").css("background-color","red");
         $("#a-bt").click(function(){
                 $("#a-part").hide();
                 $("#b-part").fadeIn();
+				$("#a-bt").css("background-color","red")
+				$("#b-bt").css("background-color","#333")
         })
         $("#b-bt").click(function(){
                 $("#b-part").hide();
                 $("#a-part").fadeIn();
+				$("#b-bt").css("background-color","red");
+				$("#a-bt").css("background-color","#333");
         })    
             }); 
 		</script>
@@ -238,11 +242,11 @@
 					<h5>推薦曲目</h5>
 					</br>
 					<ul>
-						<li><a href = "#">song 1</a></li>
-						<li><a href = "#">song 2</a></li>
-						<li><a href = "#">song 3</a></li>
-						<li><a href = "#">song 4</a></li>
-						<li><a href = "#">song 5</a></li>
+						<li><a style="color: white;font-size: 15px" href="#">IU - 如果愛已逝去/사랑이 지나가면/When a Love Passes</a></li>
+						<li><a style="color: white;font-size: 15px" href="#">IU - 我過去的故事/나의 옛날 이야기/My Old Story</a></li>
+						<li><a style="color: white;font-size: 15px" href="#">IU - 膝蓋/무릎/knee</a></li>
+						<li><a style="color: white;font-size: 15px" href="#">IU - 曾經蔚藍 (푸르던)</a></li>
+						<li><a style="color: white;font-size: 15px" href="https://miia-music.github.io/k_pop/02_kpop/02_kp.html">Through the Night (밤편지)</a></li>
 					</ul>
 				</div>
 			</div>
