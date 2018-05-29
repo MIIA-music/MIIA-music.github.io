@@ -8,7 +8,7 @@
 {
 title: '蝴蝶結',
 artist: 'Aimer',
-album: 'Singel-蝴蝶結',
+album: 'Single-蝴蝶結',
 cover: 'img/Aimer - 蝴蝶結.jpg',
 mp3: 'mp3/aimer-蝴蝶結.mp3',
 ogg: ''
