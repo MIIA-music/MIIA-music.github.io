@@ -6,11 +6,11 @@
 		autoplay = true,
 		playlist = [
 {
-title: 'Sugar',
-artist: 'Maroon 5',
-album: 'V',
-cover: 'img/Maroon5_V.jpg',
-mp3: 'mp3/12 Sugar.m4a',
+title: 'Santa Tell Me',
+artist: 'Ariana Grande',
+album: 'Single - Santa Tell Me',
+cover: 'img/SentaTellMe.jpg',
+mp3: 'mp3/Santa Tell Me.m4a',
 ogg: ''
 },
 
