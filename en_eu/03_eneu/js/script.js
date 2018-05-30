@@ -6,11 +6,11 @@
 		autoplay = true,
 		playlist = [
 {
-title: 'Santa Tell Me',
-artist: 'Ariana Grande',
-album: 'Single - Santa Tell Me',
-cover: 'img/SentaTellMe.jpg',
-mp3: 'mp3/Santa Tell Me.m4a',
+title: "We Don't Talk Anymore",
+artist: 'Charlie Puth feat. Selena Gomez',
+album: 'NineTrackMind',
+cover: 'img/NineTrackMind.jpg',
+mp3: 'mp3/Charlie Puth - We Dont Talk Anymore (feat. Selena Gomez) [Official Video].mp3',
 ogg: ''
 },
 
