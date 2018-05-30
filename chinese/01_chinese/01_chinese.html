@@ -1,0 +1,233 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+
+    $(document).ready(function(){
+        $("#a-part").hide();
+		$("a-bt").css("background-color","red");
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+				$("#a-bt").css("background-color","red")
+				$("#b-bt").css("background-color","#333")
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+				$("#b-bt").css("background-color","red");
+				$("#a-bt").css("background-color","#333");
+        })    
+            }); 
+		</script>
+		
+		<style>
+			body{
+				background-color:rgb(0,0,0);
+			}
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
+			}
+			.column {
+    				float: left;
+    				padding: 15px;
+			}
+			.content{
+				width:100%;
+				}
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
+			.main-board{
+				width: 70%;
+			}
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
+			}
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
+			}
+			.navli {
+				float: left;
+			}
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navli:hover,.btn {
+				background-color: red;
+			}
+			.introduce {
+				color:white;
+				padding: 8px;
+				margin: 4px;
+			}
+			.lyrics {
+				color:white;
+				padding:8px;
+				margin:0 auto;
+				width:100%;
+				height:50%;
+				border: 1px dotted black;
+				overflow: scroll;
+				overflow-x: hidden;
+				text-align:center;
+				line-height: 27px;
+			
+			}
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+			}
+		</style>
+		<title>嚴爵 - 輕輕(feat.PEACE)--MIIA-Music</title>
+	</head>
+	
+	<body>
+		<div class = "header">
+		<h1>嚴爵 - 輕輕(feat.PEACE)</h1>
+			<p style="font-size: 17px;"><a href = "https://miia-music.github.io" style="color: white;font-size: 15px">MIIA Music</a> - <a href = "https://miia-music.github.io/chinese.html" style="color: white;font-size: 15px">華語歌曲</a></p>
+		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+</div>
+
+						<div class = "nav">
+							<ul id="navul" style="padding-left:15px">
+								<li class="navli" id="a-bt">introduce</li>
+								<li class="navli" id="b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+寫一封信給妳一去無回跡 </br>
+就這樣搭上了車上了飛機</br>
+到一個沒有去過的地方去找自己</br> 
+但還是想到妳</br></br>
+雖然早已告訴自己別貪心 </br>
+照顧好自己 讓妳別再擔心</br>
+在沒有你之前的日子曾經 也開心</br> 
+為何像失了心</br></br>
+風吹來 一陣平息</br> 
+我鼓起 我的勇氣</br></br>
+我想這樣輕輕 問候你 可以不可以 </br>
+我們太多回憶 太絢麗 擾亂我的心</br>
+我就這樣輕輕 打擾你 對不起 就快停</br>
+此刻我的愛情 在牢裡 來自於對你 的在意</br></br>
+雖然早已告訴自己別貪心</br>
+照顧好自己 讓妳別再擔心</br>
+在沒有你之前的日子曾經 也開心</br> 
+為何像失了心</br></br>
+風吹來 一陣平息 </br>
+我鼓起 我的勇氣</br></br>
+我想這樣輕輕 問候你 可以不可以</br> 
+我們太多回憶 太絢麗 擾亂我的心</br>
+我就這樣輕輕 打擾你 對不起 就快停</br>
+此刻我的愛情 在牢裡 來自於對你 的在意</br></br>
+我想這樣輕輕 問候你 可以不可以</br>
+我們太多回憶 太絢麗 擾亂我的心</br>
+我就這樣輕輕 打擾你 對不起 就快停</br>
+此刻我的愛情 在牢裡 來自於對你 的在意</br>
+
+								</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">剛開始這首歌用了一段澎湃的弦樂當開場，前半段是真鼓、真貝斯做一種Rock Ballad的感覺，而副歌變成一種比較跳躍的電子風。</br>這首歌在創作的時候其實出了很多插曲，包含投入了超出預期的預算、原本存放音檔的硬碟損毀，還有差點讓「一直給 ThanksGiving」這張專輯必須延後推出，但好在最後是在嚴爵、混音師和嚴爵的小師妹PEACE的合作下，才沒有發生這些事情。</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#" style="color: white;font-size: 15px">The Weeknd - Call Out My Name </a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Charlie Puth - "How Long"</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande, The Weeknd - Love Me Harder</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - The Way ft. Mac Miller</a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/02_eneu/02_eneu.html" style="color: white;font-size: 15px">Ariana Grande - Santa Tell Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
+		</div>
+	
+	</body>
+</html>
