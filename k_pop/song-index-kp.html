@@ -1,127 +1,153 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!-如果commit中有提到"Check Dev_blog"的話，建議先看一下有甚麼更動-->
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-		<style>
-			body{
-				background-color:rgb(0,0,0);
-			}
-			.header, .footer {
-    				background-color: grey;
-    				color: white;
-    				padding: 15px;
-			}
-			.column {
-    				float: left;
-    				padding: 15px;
-			}
-			.clearfix::after {
-    				content: "";
-    				clear: both;
-    				display: table;
-			}
-			.menu {
-    				width: 20%;
-			}
-			.content {
-    				width: 80%;
-			}
-			.small-title{
-				padding: 8px;
-				margin:6px;
-				color:white;
-			}
-			.video-container{
-				float: left;
-    				width: 25%;
-    				padding: 5px;
-    				height: auto;
-			}
-			.menu ul {
-    				list-style-type: none;
-    				margin: 0;
-    				padding: 0;
-			}
-			.menu li {
-    				padding: 8px;
-    				margin-bottom: 0px;
-    				background-color: grey;
-    				color: #ffffff;
-				
-			}
-			.menu li:hover {
-    				background-color: rgba(71,71,71,1);
-				color: white;
-			}
-			.menu a {
-				color: #ffffff;
-			}
-			.menu a:hover {
-				color: black;
-				text-decoration:none;
-			}
-			.song-list{
-				background-color :#4f4f4f;
-				color :white;
-				float :left;
-				width: 45%;
-				padding: 5px;
-				margin:5px;
-			}
-		</style>
-		<title>K-pop--MIIA-Music</title>
-	</head>
-	<body>
-		<div class="header">
-  			<h1>MIIA MUSIC WEBSITE</h1>
-			<p style="font-size: 17px;">在這裡，找到自己所愛的音樂</p>
-		</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <style>
+    body{
+      background-color:rgb(0,0,0);
+    }
+    .header, .footer {
+      background-color: grey;
+      color: white;
+      padding: 15px;
+    }
+    .column {
+      float: left;
+      padding: 15px;
+    }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .menu {
+      width: 20%;
+    }
+    .content {
+      width: 80%;
+    }
+    .small-title{
+      padding: 8px;
+      margin:6px;
+      color:white;
+    }
+    .video-container{
+      float: left;
+      width: 25%;
+      padding: 5px;
+      height: auto;
+    }
+    .menu ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    .menu li {
+      padding: 8px;
+      margin-bottom: 0px;
+      background-color: grey;
+      color: #ffffff;
 
-		<div class="clearfix">
-  			<div class="column menu btn" style="padding: 0px;text-align:left;">
-    				<ul>
-					<a href="https://miia-music.github.io/k_pop.html"><li id ="btn1" style="background-color:red; color:white;">K-pop</li></a>      					
-					<a href="./song-index-kp.html"><li id="btn2">依演唱者</li></a>
-					<a href="./song-index-kp2.html"><li id="btn3">依年代</li></a>
-					<a href="./song-index-kp3.html"><li id="btn4">純音樂</li></a>
-      					<a href="https://miia-music.github.io/chinese.html"><li id ="btn5">華語歌曲</li></a>
-      					<a href="https://miia-music.github.io/en_eu.html"><li id ="btn6">歐美歌曲</li></a>
-      					<a href="https://miia-music.github.io/j_pop.html"><li id ="btn7">J-pop</li></a>
-					<a href="https://miia-music.github.io/index.html"><li id ="btn8">回首頁</li></a>
-    				</ul>
-  			</div>
-			<div class="column content">
-				<div class="clear-fix ,row">
-					<div class="song-list ,clear-fix">
-							<h5 style ="color:white;">IU</h5>
-						<ul>
-							<a href="./01_kpop/01_kp.html"><li>IU - 這樣的Ending (Ending Scene)</li></a>
-							<a href="./02_kpop/02_kp.html"><li>IU - Through the Night (밤편지)</li></a>
-						</ul>
-					</div>
+    }
+    .menu li:hover {
+      background-color: rgba(71,71,71,1);
+      color: white;
+    }
+    .menu a {
+      color: #ffffff;
+    }
+    .menu a:hover {
+      color: black;
+      text-decoration:none;
+    }
+    .song-list{
+      background-color :#4f4f4f;
+      color :white;
+      float :left;
+      width: 45%;
+      padding: 5px;
+      margin:5px;
+    }
+  </style>
+  <title>K-pop--MIIA-Music</title>
+</head>
+<body>
+  <div class="header">
+    <h1>MIIA MUSIC WEBSITE</h1>
+    <p style="font-size: 17px;">在這裡，找到自己所愛的音樂</p>
+  </div>
 
-					<div class="song-list ,clear-fix">
-					<h5 style ="color:white;">song list b</h5>
-					<ul style="color:white">
-						<li></li>
-						<li></li>
-						</ul>
-					</div>
-				</div>					
-  			</div>
-		</div>
-		
+  <div class="clearfix">
+    <div class="column menu btn" style="padding: 0px;text-align:left;">
+      <ul>
+        <a href="https://miia-music.github.io/k_pop.html"><li id ="btn1" style="background-color:red; color:white;">K-pop</li></a>      					
+        <a href="./song-index-kp.html"><li id="btn2">依演唱者</li></a>
+        <a href="./song-index-kp2.html"><li id="btn3">依年代</li></a>
+        <a href="./song-index-kp3.html"><li id="btn4">純音樂</li></a>
+        <a href="https://miia-music.github.io/chinese.html"><li id ="btn5">華語歌曲</li></a>
+        <a href="https://miia-music.github.io/en_eu.html"><li id ="btn6">歐美歌曲</li></a>
+        <a href="https://miia-music.github.io/j_pop.html"><li id ="btn7">J-pop</li></a>
+        <a href="https://miia-music.github.io/index.html"><li id ="btn8">回首頁</li></a>
+      </ul>
+    </div>
+    <div class="column content">
+      <div class="clear-fix ,row">
+        <div class="song-list ,clear-fix">
+          <h5 style ="color:white;">IU</h5>
+          <ul>
+            <a href="./01_kpop/01_kp.html"><li>IU - 這樣的Ending (Ending Scene)</li></a>
+            <a href="./02_kpop/02_kp.html"><li>IU - Through the Night (밤편지)</li></a>
+          </ul>
+        </div>
 
-		</br>
-		<div class="footer">
-  			<p>本頁面僅供學術研究之用</p>
-		</div>
-			
-	</body>
+        <div class="song-list ,clear-fix">
+        <h5 style ="color:white;"> 太妍（Taeyeon）</h5>
+          <ul style="color:white">
+            <li>太妍 (Taeyeon) - I</li>
+            <li>太妍 (Taeyeon) - WHY</li>
+            <li>太妍 (Taeyeon) - 11:11</li>
+            <li>太妍 (Taeyeon) - Rain</li>
+          </ul>
+        </div>
+        
+        <div class="clear-fix ,row">
+          <div class="song-list ,clear-fix">
+            <h5 style ="color:white;">BLACKPINK</h5>
+            <ul>
+              <a href="#" style ="color:white;"><li>BLACKPINK - AS IF IT'S YOUR LAST</li></a>
+              <a href="#" style ="color:white;"><li>BLACKPINK - BOOMBAYAH</li></a>
+              <a href="#" style ="color:white;"><li>BLACKPINK - WHISTLE</li></a>
+              <a href="#" style ="color:white;"><li>BLACKPINK - STAY</li></a>
+            </ul>
+          </div>
+          <div class="song-list ,clear-fix">
+            <h5 style ="color:white;">BTS（방탄소년단）</h5>
+            <ul>
+              <a href="#" style="color:white"><li>BTS - Not Today</li></a>
+              <a href="#" style="color:white"><li>BTS - FIRE</li></a>
+              <a href="#" style="color:white"><li>BTS - DOPE</li></a>
+              <a href="#" style="color:white"><li>BTS - Save ME</li></a>
+              <a href="#" style="color:white"><li>BTS - Boy In Luv</li></a>
+            </ul>
+          </div>					
+        </div>
+
+        
+      </div>					
+    </div>
+  </div>
+
+
+  </br>
+<div class="footer">
+  <p>本頁面僅供學術研究之用</p>
+</div>
+
+</body>
