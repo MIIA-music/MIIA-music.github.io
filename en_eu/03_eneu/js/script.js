@@ -8,7 +8,7 @@
 {
 title: "We Don't Talk Anymore",
 artist: 'Charlie Puth feat. Selena Gomez',
-album: 'NineTrackMind',
+album: 'Nine Track Mind',
 cover: 'img/NineTrackMind.jpg',
 mp3: 'mp3/Charlie Puth - We Dont Talk Anymore (feat. Selena Gomez) [Official Video].mp3',
 ogg: ''
