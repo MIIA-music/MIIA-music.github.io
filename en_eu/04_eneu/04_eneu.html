@@ -1,0 +1,267 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+    $(document).ready(function(){
+        $("#a-part").hide();
+    
+        
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+        })    
+            }); 
+		</script>
+		
+		<style>
+			body{
+				background-color:rgb(0,0,0);
+			}
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
+			}
+			.column {
+    				float: left;
+    				padding: 15px;
+			}
+			.content{
+				width:100%;
+				}
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
+			.main-board{
+				width: 70%;
+			}
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
+			}
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
+			}
+			.navli {
+				float: left;
+			}
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navli:hover,.btn {
+				background-color: red;
+			}
+			.introduce {
+				color:white;
+				padding: 8px;
+				margin: 4px;
+			}
+			.lyrics {
+				color:white;
+				padding:8px;
+				margin:0 auto;
+				width:100%;
+				height:50%;
+				border: 1px dotted black;
+				overflow: scroll;
+				overflow-x: hidden;
+				text-align:center;
+				line-height: 27px;
+			
+			}
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+			}
+		</style>
+		<title>Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez)--MIIA-Music</title>
+	</head>
+	
+	<body>
+		<div class = "header">
+		<h1>Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez)</h1>
+			<p style="font-size: 17px;"><a href = "https://miia-music.github.io" style="color: white;font-size: 15px">MIIA Music</a> - <a href = "https://miia-music.github.io/en_eu.html" style="color: white;font-size: 15px">歐美歌曲</a></p>
+		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+</div>
+
+						<div class = "nav">
+							<ul id = "navul" style="padding-left:15px">
+								<li class = "navli" id = "a-bt">introduce</li>
+								<li class = "navli" id = "b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+We don't talk anymore, we don't talk anymore</br>
+We don't talk anymore, like we used to do</br>
+We don't love anymore</br>
+What was all of it for? </br>
+Oh, we don't talk anymore, like we used to do</br></br>
+I just heard you found the one you've been looking</br>
+You've been looking for</br>
+I wish I would have known that wasn't me</br>
+'Cause even after all this time I still wonder</br>
+Why I can't move on</br>
+Just the way you did so easily</br></br>
+Don't wanna know</br>
+What kind of dress you're wearing tonight</br>
+If he's holding onto you so tight</br>
+The way I did before</br>
+I overdosed</br>
+Should've known your love was a game</br>
+Now I can't get you out of my brain</br>
+Oh, it's such a shame</br></br>
+That we don't talk anymore, we don't talk anymore</br>
+We don't talk anymore, like we used to do</br>
+We don't love anymore</br>
+What was all of it for? </br>
+Oh, we don't talk anymore, like we used to do</br></br>
+I just hope you're lying next to somebody</br>
+Who knows how to love you like me</br>
+There must be a good reason that you're gone</br>
+Every now and then I think you</br>
+Might want me to come show up at your door</br>
+But I'm just too afraid that I'll be wrong</br></br>
+Don't wanna know</br>
+If you're looking into her eyes</br>
+If she's holding onto you so tight the way I did before</br>
+I overdosed</br>
+Should've known your love was a game</br>
+Now I can't get you out of my brain</br>
+Oh, it's such a shame</br></br>
+That we don't talk anymore (We don't, we don't) </br>
+We don't talk anymore (We don't, we don't) </br>
+We don't talk anymore, like we used to do</br>
+We don't love anymore (We don't, we don't) </br>
+What was all of it for? (We don't, we don't) </br>
+Oh, we don't talk anymore, like we used to do</br></br>
+Like we used to do</br></br>
+Don't wanna know</br>
+What kind of dress you're wearing tonight</br>
+If he's giving it to you just right</br>
+The way I did before</br>
+I overdosed</br>
+Should've known your love was a game</br>
+Now I can't get you out of my brain</br>
+Oh, it's such a shame</br></br>
+That we don't talk anymore (We don't, we don't) </br>
+We don't talk anymore (We don't, we don't) </br>
+We don't talk anymore, like we used to do</br>
+We don't love anymore (We don't, we don't) </br>
+What was all of it for? (We don't, we don't) </br>
+Oh, we don't talk anymore, like we used to do</br>
+We don't talk anymore, oh, oh</br></br>
+(What kind of dress you're wearing tonight) </br>
+(If he's holding onto you so tight) </br>
+The way I did before</br>
+We don't talk anymore, oh, woah</br>
+(Should've known your love was a game) </br>
+(Now I can't get you out of my brain) </br>
+Ooh, it's such a shame</br>
+That we don't talk anymore
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">這歌首收錄於 Charle Puth 的首張專輯 Nine Track Mind（中譯：天馬行空），在2016年剛推出時奪得告示牌百強單曲的第九名，雖然該專輯整體評價不盡理想，但仍然位在告示牌200大專輯榜的第六名。</br>整首歌藉由 Charlie Puth 跟 Selena Gomez 的深情對唱，把歌曲所想要傳達的意境毫無保留的呈現出來，曲中曖昧不明的情感渲染了全球各地的青少年，也就成為朗朗上口的英語歌曲</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#" style="color: white;font-size: 15px">The Weeknd - Call Out My Name </a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Charlie Puth - How Long</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Maroon 5 - Wait</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - The Way ft. Mac Miller</a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/01_eneu/01_eneu.html" style="color: white;font-size: 15px">Maroon 5 - Sugar</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
+		</div>
+	
+	</body>
+</html>
