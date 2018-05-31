@@ -1,0 +1,246 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+
+    $(document).ready(function(){
+        $("#a-part").hide();
+		$("a-bt").css("background-color","red");
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+				$("#a-bt").css("background-color","red")
+				$("#b-bt").css("background-color","#333")
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+				$("#b-bt").css("background-color","red");
+				$("#a-bt").css("background-color","#333");
+        })    
+            }); 
+		</script>
+		
+		<style>
+			body{
+				background-color:rgb(0,0,0);
+			}
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
+			}
+			.column {
+    				float: left;
+    				padding: 15px;
+			}
+			.content{
+				width:100%;
+				}
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
+			.main-board{
+				width: 70%;
+			}
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
+			}
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
+			}
+			.navli {
+				float: left;
+			}
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navli:hover,.btn {
+				background-color: red;
+			}
+			.introduce {
+				color:white;
+				padding: 8px;
+				margin: 4px;
+			}
+			.lyrics {
+				color:white;
+				padding:8px;
+				margin:0 auto;
+				width:100%;
+				height:50%;
+				border: 1px dotted black;
+				overflow: scroll;
+				overflow-x: hidden;
+				text-align:center;
+				line-height: 27px;
+			
+			}
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+			}
+		</style>
+		<title>Maroon 5 - Wait--MIIA-Music</title>
+	</head>
+	
+	<body>
+		<div class = "header">
+		<h1>Maroon 5 - Wait</h1>
+			<p style="font-size: 17px;"><a href = "https://miia-music.github.io" style="color: white;font-size: 15px">MIIA Music</a> - <a href = "https://miia-music.github.io/en_eu.html" style="color: white;font-size: 15px">歐美歌曲</a></p>
+		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+</div>
+
+						<div class = "nav">
+							<ul id="navul" style="padding-left:15px">
+								<li class="navli" id="a-bt">introduce</li>
+								<li class="navli" id="b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+Dirty looks from your mother</br>
+Never seen you in a dress that color, no</br>
+It's a special occasion</br>
+Not invited but I'm glad I made it</br></br>
+Oh, let me apologize</br>
+I'll make up, make up, make up, make up for all those times</br>
+Your love, I don't wanna lose</br>
+I'm beggin', beggin', beginn', beggin', I'm begging you</br></br>
+Wait, can you turn around, can you turn around? </br>
+Just wait, can we work this out, can we work this out? </br>
+Just wait, can you come here please? 'Cause I want to be with you</br></br>
+Wait, can you turn around, can you turn around? </br>
+Just wait, can we work this out, can we work this out? </br>
+Just wait, can you come here please? 'Cause I want to be with you</br></br>
+Can we talk for a moment? </br>
+Got these feelings that I'm tired of holding on</br>
+Wasn't tryin' to get wasted</br>
+I needed more than three or four to say this</br></br>
+Oh, let me apologize (yea) </br>
+I'll make up, make up, make up, make up for all those times (all those times) </br>
+Your love, I don't wanna lose</br>
+I'm beggin', beggin', beggin', beggin', I'm begging you</br></br>
+Wait, can you turn around, can you turn around? </br>
+Just wait, can we work this out, can we work this out? </br>
+Just wait, can you come here please? 'Cause I want to be with you</br></br>
+Wait, can you turn around, can you turn around? </br>
+Just wait, can we work this out, can we work this out? </br>
+Just wait, can you come here please? 'Cause I want to be with you</br></br>
+You say I'm just another bad guy</br>
+You say I've done a lot of things I can't undo</br>
+Before you tell me for the last time</br>
+I'm beggin', beggin', beggin', beggin' you</br></br>
+Wait, can you turn around, can you turn around? </br>
+Just wait, can we work this out, can we work this out? </br>
+Just wait, can you come here please? 'Cause I want to be with you</br>
+Wait, can you turn around, can you turn around? </br>
+Just wait, can we work this out, can we work this out? </br>
+Just wait, can you come here please? 'Cause I want to be with you
+
+								</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">
+							整首歌的意境圍繞在情侶之間因為某些事情引起糾紛而不停地請求對方原諒，但另一方卻遲遲不領情的窘境，十分折騰人的情感在這首歌中完美的展現出來。</br>
+							這首歌收錄於 Maroon 5 在2017年11月發行的 Red Pill Blues （中譯：紅藍藥丸）中，而這首歌的意境也跟這張專輯相當的契合，讓專輯的整體感更上一層。
+							</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#" style="color: white;font-size: 15px">The Weeknd - Call Out My Name </a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Charlie Puth - "How Long"</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande, The Weeknd - Love Me Harder</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - The Way ft. Mac Miller</a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/02_eneu/02_eneu.html" style="color: white;font-size: 15px">Ariana Grande - Santa Tell Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
+		</div>
+	
+	</body>
+</html>
