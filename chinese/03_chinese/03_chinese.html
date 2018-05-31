@@ -1,0 +1,276 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+
+    $(document).ready(function(){
+        $("#a-part").hide();
+		$("a-bt").css("background-color","red");
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+				$("#a-bt").css("background-color","red")
+				$("#b-bt").css("background-color","#333")
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+				$("#b-bt").css("background-color","red");
+				$("#a-bt").css("background-color","#333");
+        })    
+            }); 
+		</script>
+		
+		<style>
+			body{
+				background-color:rgb(0,0,0);
+			}
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
+			}
+			.column {
+    				float: left;
+    				padding: 15px;
+			}
+			.content{
+				width:100%;
+				}
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
+			.main-board{
+				width: 70%;
+			}
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
+			}
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
+			}
+			.navli {
+				float: left;
+			}
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navli:hover,.btn {
+				background-color: red;
+			}
+			.introduce {
+				color:white;
+				padding: 8px;
+				margin: 4px;
+			}
+			.lyrics {
+				color:white;
+				padding:8px;
+				margin:0 auto;
+				width:100%;
+				height:50%;
+				border: 1px dotted black;
+				overflow: scroll;
+				overflow-x: hidden;
+				text-align:center;
+				line-height: 27px;
+			
+			}
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+			}
+		</style>
+		<title>黃明志 feat.王力宏 - 飄向北方--MIIA-Music</title>
+	</head>
+	
+	<body>
+		<div class = "header">
+		<h1>黃明志 feat.王力宏 - 飄向北方</h1>
+			<p style="font-size: 17px;"><a href = "https://miia-music.github.io" style="color: white;font-size: 15px">MIIA Music</a> - <a href = "https://miia-music.github.io/chinese.html" style="color: white;font-size: 15px">華語歌曲</a></p>
+		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+</div>
+
+						<div class = "nav">
+							<ul id="navul" style="padding-left:15px">
+								<li class="navli" id="a-bt">introduce</li>
+								<li class="navli" id="b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+（王力宏）</br>
+漂向北方 別問我家鄉</br>
+高聳古老的城牆 擋不住憂傷</br>
+我漂向北方 家人是否無恙</br>
+肩上沉重的行囊 盛滿了惆悵</br></br>
+（黃明志 Rap）</br>
+有人說他在老家欠了一堆錢 需要避避風頭</br>
+有人說他練就了一身武藝卻沒機會嶄露</br>
+有人失去了自我 手足無措四處漂流</br>
+有人為了夢想為了三餐為養家餬口</br></br>
+他住在燕郊區 殘破的求職公寓</br>
+擁擠的大樓裡 堆滿陌生人都來自外地</br>
+他埋頭寫著履歷 懷抱著多少憧憬</br>
+往返在九三零號公路 內心盼著奇蹟</br></br>
+忍著淚 (不聽也不想 不敢回頭望的遺憾) </br>
+掩著傷 (扛下了夢想 要毅然決然去流浪) </br>
+抬頭看 (卸下了自尊 光環 過去多風光) </br>
+著斜陽 (就算再不堪 敗仗 也不能投降) </br>
+親愛的 (再見了南方 眺望最美麗的家鄉) </br>
+在遠方 (椰子樹搖晃 夢境倒映著的幻象) </br>
+這城市 (霧霾太猖狂 不散 都看不清前方) </br>
+太迷惘</br></br>
+（王力宏）</br>
+我漂向北方 別問我家鄉</br>
+高聳古老的城牆 擋不住憂傷</br>
+我漂向北方 家人是否無恙</br>
+肩上沉重的行囊 盛滿了惆悵</br>
+也是最後寄望 回不去的遠方 Oh</br></br>
+（黃明志 Rap）</br>
+空氣太髒 太混濁 他說不喜歡</br>
+車太混亂 太匆忙 他還不習慣</br>
+人行道一雙又一雙 斜視冷漠的眼光</br>
+他經常將自己灌醉 強迫融入 這大染缸</br></br>
+走著腳步蹣跚 二鍋頭在搖晃</br>
+失意的人啊偶爾醉倒在那胡同陋巷</br>
+咀嚼爆肚涮羊 手中盛著一碗熱湯</br>
+用力地 溫暖著 內心裡的不安</br></br>
+忍著淚 (不聽也不想 不敢回頭望的遺憾) </br>
+掩著傷 (扛下了夢想 要毅然決然去流浪) </br>
+抬頭看 (卸下了自尊 光環 過去多風光) </br>
+著斜陽 (就算再不堪 敗仗 也不能投降) </br>
+親愛的 (再見了南方 眺望最美麗的家鄉) </br>
+在遠方 (椰子樹搖晃 夢境倒映著的幻象) </br>
+這城市 (霧霾太猖狂 不散 都看不清前方) </br>
+太迷惘</br></br>
+（王力宏）</br>
+我漂向北方 別問我家鄉</br>
+高聳古老的城牆 擋不住憂傷</br>
+我漂向北方 家人是否無恙</br>
+肩上沉重的行囊 盛滿了惆悵</br></br>
+就像那塵土飄散隨著風向 誰又能帶領著我一起飛翔</br>
+我站在天壇中央閉上眼 祈求一家人都平安</br></br>
+我漂向北方 別問我家鄉</br>
+高聳古老的城牆 擋不住憂傷</br>
+我漂向北方 家人是否無恙</br>
+肩上沉重的行囊 盛滿了惆悵</br></br>
+（黃明志 Rap）</br>
+(我漂向北方)我站在天子腳下 被踩得喘不過氣</br>
+(別問我家鄉)走在前門大街 跟人潮 總會分歧</br>
+(高聳古老的城牆)或許我根本不屬於這裡 早就該離去</br>
+(擋不住憂傷)誰能給我致命的一擊 請用力到徹底</br></br>
+(我漂向北方)這裡是夢想的中心 但夢想都遙不可及</br>
+(家人是否無恙)這裡是圓夢的聖地 但卻總是撲朔迷離</br>
+(肩上沉重的行囊)多少人敵不過殘酷的現實 從此銷聲匿跡</br>
+(盛滿了惆悵)多少人陷入了昏迷 剩下一具 空殼屍體</br>
+(也是最後寄望) Rest In Peace</br>
+回不去的遠方 Oh</br>
+漂向北方 別再問我家鄉
+
+								</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">
+這一座城市，充滿夢想，充滿憧憬，也充滿了空殼屍體，人們為了家庭、為了自己的理想而外出打拚，但最後真正成功的又有多少人？</br>
+整首歌由王力宏作為主要演唱，而黃明志則是擔當Rap的部分，歌裡面的情緒相當到位，而且很能夠對應到那些在外打拚的人的心聲。
+</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#" style="color: white;font-size: 15px">The Weeknd - Call Out My Name </a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Charlie Puth - "How Long"</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande, The Weeknd - Love Me Harder</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - The Way ft. Mac Miller</a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/02_eneu/02_eneu.html" style="color: white;font-size: 15px">Ariana Grande - Santa Tell Me</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
+		</div>
+	
+	</body>
+</html>
