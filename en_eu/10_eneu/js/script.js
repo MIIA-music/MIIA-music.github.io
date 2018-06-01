@@ -6,11 +6,11 @@
 		autoplay = true,
 		playlist = [
 {
-title: "Alone",
-artist: 'Marshmello',
-album: 'Single - Alone',
-cover: 'img/Alone.jpg',
-mp3: 'mp3/Marshmello - Alone (Official Music Video).mp3',
+title: "Supplies",
+artist: 'Justin Timberlake',
+album: 'Man Of The Woods',
+cover: 'img/ManOfTheWoods.jpg',
+mp3: 'mp3/Justin Timberlake - Supplies Lyrics.m4a',
 ogg: ''
 },
 
