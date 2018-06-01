@@ -1,0 +1,262 @@
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css/family=Lobster" rel="stylesheet" type="text">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/stylesheets/styles.css">
+		<script src="./js/jquery-1.7.2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		
+		<script>
+    $(document).ready(function(){
+        $("#a-part").hide();
+    
+        
+        $("#a-bt").click(function(){
+                $("#a-part").hide();
+                $("#b-part").fadeIn();
+        })
+        $("#b-bt").click(function(){
+                $("#b-part").hide();
+                $("#a-part").fadeIn();
+        })    
+            }); 
+		</script>
+		
+		<style>
+			body{
+				background-color:rgb(0,0,0);
+			}
+			.header, .footer {
+    				background-color: grey;
+    				color: white;
+    				padding: 15px;
+			}
+			.column {
+    				float: left;
+    				padding: 15px;
+			}
+			.content{
+				width:100%;
+				}
+			.clearfix::after {
+    				content: "";
+    				clear: both;
+    				display: table;
+			}
+			.main-board{
+				width: 70%;
+			}
+			.sec-board{
+				width: 30%;
+				border-left: 3px solid rgb(200,200,200);
+				padding :15px;
+			}
+			#navul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				overflow: hidden;
+				background-color: #333;
+				width:100%
+			}
+			.navli {
+				float: left;
+			}
+			.navli, .btn {
+				display: inline-block;
+				color: white;
+				text-align: center;
+				padding: 14px 16px;
+				text-decoration: none;
+			}
+			.navli:hover,.btn {
+				background-color: red;
+			}
+			.introduce {
+				color:white;
+				padding: 8px;
+				margin: 4px;
+			}
+			.lyrics {
+				color:white;
+				padding:8px;
+				margin:0 auto;
+				width:100%;
+				height:50%;
+				border: 1px dotted black;
+				overflow: scroll;
+				overflow-x: hidden;
+				text-align:center;
+				line-height: 27px;
+			
+			}
+			.lyrics::-webkit-scrollbar {
+    				width: 12px;
+			}
+			.lyrics::-webkit-scrollbar-track {
+    				-webkit-box-shadow: inset 0 0 6px rgba(100,100,100,0.3); 
+    				border-radius: 10px;
+			}
+			.lyrics::-webkit-scrollbar-thumb {
+    				border-radius: 10px;
+    				-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+			}
+			.progress{
+				display:-ms-flexbox;
+				overflow:hidden;
+				font-size:.75rem;
+				background-color:#e9ecef;
+				border-radius:.25rem
+			}
+		</style>
+		<title>Charlie Puth - How Long--MIIA-Music</title>
+	</head>
+	
+	<body>
+		<div class = "header">
+		<h1>Charlie Puth - How Ling</h1>
+			<p style="font-size: 17px;"><a href = "https://miia-music.github.io" style="color: white;font-size: 15px">MIIA Music</a> - <a href = "https://miia-music.github.io/en_eu.html" style="color: white;font-size: 15px">歐美歌曲</a></p>
+		</div>
+		<div class = "clearfix">
+			<div class = "row">
+				<div class = "colume main-board">
+					<div>
+						<div id="player">
+	<div class="cover"></div>
+	<div class="ctrl">
+		<div class="tag">
+			<strong>Title</strong>
+		</div>
+		<div class="control">
+			<div class="left">
+				<div class="rewind icon"></div>
+				<div class="playback icon"></div>
+				<div class="fastforward icon"></div>
+			</div>
+			<div class="volume right">
+				<div class="mute icon left"></div>
+				<div class="slider left">
+					<div class="pace"></div>
+				</div>
+			</div>
+		</div>
+		<div class="progress" style="background-color:black">
+			<div class="slider" style="width:345px">
+				<div class="loaded"></div>
+				<div class="pace"></div>
+		        </div>
+		</div>
+		<div class="timer left">0:00</div>
+	</div>
+</div>
+
+<script src="./js/jquery-ui-1.8.17.custom.min.js"></script>
+
+
+
+<script src="./js/script.js"></script>
+</div>
+
+						<div class = "nav">
+							<ul id = "navul" style="padding-left:15px">
+								<li class = "navli" id = "a-bt">introduce</li>
+								<li class = "navli" id = "b-bt">lyrics</li>
+							</ul>
+						</div>
+						
+							<div class = "column content" id = "a-part">
+								
+								<p class="introduce lyrics">	
+(intro) </br>
+Alright</br>
+Ooh, yeah</br></br>
+
+I'll admit, I was wrong, what else can I say, girl?</br>
+Can't you blame my head and not my heart?</br>
+I was drunk, I was gone, that don't make it right, but</br>
+I promise there were no feelings involved, mmh</br></br>
+She said, "Boy, tell me honestly</br>
+Was it real or just for show?", yeah</br>
+She said, "Save your apologies</br>
+Baby, I just gotta know"</br>
+How long has this been goin' on? </br>
+You been creepin' 'round on me</br>
+While you callin' me "baby"</br>
+How long has this been goin' on? </br>
+You been actin' so shady (shady) </br>
+I've been feelin' it lately, baby</br></br>
+Ooo-oh (yeah) </br>
+Ooo-oh (encore) </br>
+Oooh-ooh-oh</br></br>
+I'll admit (I'll admit), it's my fault (my fault), but you gotta believe me</br>
+When I say it only happened once, mmh</br>
+I tried (I tried), and I tried (I tried), but you'll never see that</br>
+You're the only I wanna love, oh, yeah</br></br>
+She said "Boy, tell me honestly" (honestly) </br>
+"Was it real or just for show?", yeah (real or just for show?) </br>
+She said, "Save your apologies" (apologies, yeah) </br>
+"Baby, I just gotta know"</br></br>
+How long has this been goin' on? </br>
+You been creepin' 'round on me (on me) </br>
+While you callin' me "baby" (baby) </br>
+How long has this been goin' on? </br>
+You been actin' so shady (shady) </br>
+I've been feelin' it lately (lately), baby</br></br>
+Ooo-oh (yeah) </br>
+Ooo-oh (encore) </br>
+Oooh-ooh-oh</br>
+How long has it been goin' on, baby? </br>
+Ooo-oh (yeah) </br>
+Ooo-oh, you gotta go tell me now</br>
+Oooh-ooh-oh</br></br>
+She said, "Boy, tell me honestly</br>
+Was it real or just for show?", yeah</br>
+She said, "Save your apologies</br>
+Baby, I just gotta know"</br></br>
+How long has this been goin' on? (on, on) </br>
+You been creepin' 'round on me (on me) </br>
+While you callin' me "baby" (baby) </br>
+How long has this been goin' on? </br>
+You been actin' so shady (shady) </br>
+I've been feelin' it lately (lately), baby</br>
+How long has this been goin' on? </br>
+You've been creepin' 'round on me</br>
+How long has it been goin' on, baby? Oh</br>
+How long has this been goin' on? </br>
+You've been actin' so shady (shady) </br>
+I've been feelin' it lately, baby</br>
+
+										<!-歌詞需要手動換行，每一個換行都需要加一個"/br"-->
+</p>
+							</div>
+						
+						<div class = "column content" id = "b-part">
+							<p class="introduce">
+收錄這首歌的專輯 VoiceNotes （暫定中譯：音的筆記）整張都是由 Charlie Puth 一人獨力創作完成的，雖然這張專輯所收錄的主打歌曲在2017年都已經完成，但 Puth 為了要將這張專輯能夠「更加完美」而往後延了一段時間才發行這張專輯，同時也收錄了另外兩首歌曲。</br>
+而這首 How Long 在2017年十月就已經在Youtube和各大音樂平台發行，也在告示牌排行榜奪得了第21名的成績，曲風帶有大量的個人風格，特別是伴奏中大量運用的藍調，就是他在正式出道之前所經常於酒吧表演的項目；而這首歌也為了呼應專輯的整體性，內容也偏向情侶間的紛爭。</br>
+							</p>
+						</div>
+				</div>
+				<div class = "colume sec-board ,clearfix">
+					<h5>推薦曲目</h5>
+					</br>
+					<ul>
+						<li><a href = "#" style="color: white;font-size: 15px">The Weeknd - Call Out My Name </a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/03_eneu/03_eneu.html" style="color: white;font-size: 15px">Charlie Puth - We Don't Talk Anymore (feat. Selena Gomez)</a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/05_eneu/05_eneu.html" style="color: white;font-size: 15px">Maroon 5 - Wait</a></li>
+						<li><a href = "#" style="color: white;font-size: 15px">Ariana Grande - The Way ft. Mac Miller</a></li>
+						<li><a href = "https://miia-music.github.io/en_eu/01_eneu/01_eneu.html" style="color: white;font-size: 15px">Maroon 5 - Sugar</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class = "footer">
+		<p>本頁面僅供學術研究之用</p>
+		</div>
+	
+	</body>
+</html>
