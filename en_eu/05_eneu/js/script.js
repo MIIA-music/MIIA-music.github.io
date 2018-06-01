@@ -10,7 +10,7 @@ title: 'Wait',
 artist: 'Maroon 5',
 album: 'Red Pill Blues',
 cover: 'img/RedPillBlues.jpg',
-mp3: 'mp3/03 wait.m4a',
+mp3: 'mp3/03 Wait.m4a',
 ogg: ''
 },
 
