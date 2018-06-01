@@ -6,11 +6,11 @@
 		autoplay = true,
 		playlist = [
 {
-title: "Alone",
-artist: 'Marshmello',
-album: 'Single - Alone',
-cover: 'img/Alone.jpg',
-mp3: 'mp3/Marshmello - Alone (Official Music Video).mp3',
+title: "Stay The Night",
+artist: 'Zedd Feat. Hayley Williams',
+album: 'Clarity Dulex Edition',
+cover: 'img/ClarityDulex.jpg',
+mp3: 'mp3/zedd - Stay The Night.mp3',
 ogg: ''
 },
 
