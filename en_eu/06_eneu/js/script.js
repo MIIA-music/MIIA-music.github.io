@@ -7,7 +7,7 @@
 		playlist = [
 {
 title: 'Side To Side',
-artist: 'Ariana Grande Feat. Nicki Minaj',
+artist: 'Ariana Grande feat. Nicki Minaj',
 album: 'Dangerous Woman',
 cover: 'img/Dangerous Woman_AG.jpg',
 mp3: 'mp3/05 Side To Side.m4a',

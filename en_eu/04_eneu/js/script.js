@@ -7,7 +7,7 @@
 		playlist = [
 {
 title: "Suit & Tie",
-artist: 'Justin Timberlake, Jay-Z',
+artist: 'Justin Timberlake feat. Jay-Z',
 album: 'The 20/20 Experience',
 cover: 'img/The2020Experience.png',
 mp3: 'mp3/02 Suit & Tie.m4a',

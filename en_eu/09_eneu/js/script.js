@@ -7,7 +7,7 @@
 		playlist = [
 {
 title: "Stay The Night",
-artist: 'Zedd Feat. Hayley Williams',
+artist: 'Zedd feat. Hayley Williams',
 album: 'Clarity Dulex Edition',
 cover: 'img/ClarityDulex.jpg',
 mp3: 'mp3/zedd - Stay The Night.mp3',
